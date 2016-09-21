@@ -21,6 +21,11 @@ public String showTitle() {
 }
 
 @Override
+public void setupViews() {
+    // find my views.
+}
+
+@Override
 public void onStepCancel() {
     // you can handle special cases when canceling.
 }
