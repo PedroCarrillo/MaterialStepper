@@ -54,6 +54,7 @@ public abstract class StepView extends LinearLayout implements View.OnClickListe
     public abstract String showTitle();
     public abstract void onStepCancel();
     public abstract String showSelection();
+    public abstract void setupViews();
 
     public void setStepLayoutInterface(StepLayoutInterface stepLayoutInterface) {
         this.stepLayoutInterface = stepLayoutInterface;
@@ -112,6 +113,8 @@ public abstract class StepView extends LinearLayout implements View.OnClickListe
 
         vsContent.setLayoutResource(customStepResource());
         vsContent.inflate();
+
+        setupViews();
 
     }
 

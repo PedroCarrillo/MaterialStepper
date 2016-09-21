@@ -25,6 +25,11 @@ public class Step1Test extends StepView {
     }
 
     @Override
+    public void setupViews() {
+        // find my views.
+    }
+
+    @Override
     public String showTitle() {
         return "Step "+stepNumber;
     }
