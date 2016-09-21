@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Material Stepper</string>
+    <string name="next">CONTINUE</string>
+    <string name="cancel">Cancel</string>
+</resources>
