@@ -4,7 +4,7 @@ Android library for Steppers inside Material guidelines
 # How to use
 
 Extend your class from StepView. You can do any logic you want in here and add any view you like for your steps. 
-
+```
 @Override
 public int customStepResource() {
     //Should return the layout resource id you want for this step.
@@ -29,7 +29,7 @@ public void onStepCancel() {
 public String showSelection() {
     // update the subtitle label with the value the user selected. Just return an string with your data.
 }
-
+```
 Add this to your activity or fragment:
 
     <pedrocarrillo.com.materialstepperlibrary.StepLayout
@@ -38,7 +38,7 @@ Add this to your activity or fragment:
         android:layout_height="wrap_content"/>
 
 Once you have this you can do the following:
-
+```
 stepLayout = (StepLayout) findViewById(R.id.stepLayout);
 Step1Test step1 = new Step1Test(this);
 
@@ -65,7 +65,7 @@ stepLayout.setStepLayoutResult(new StepLayoutResult() {
 });
 
 stepLayout.load();
-
+```
 
 
 ![Preview](material_test1.gif)
