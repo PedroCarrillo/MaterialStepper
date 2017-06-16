@@ -64,7 +64,7 @@ public abstract class StepView extends LinearLayout implements View.OnClickListe
         currentState = STATE.WAIT;
         tvPosition.setActivated(false);
         tvPosition.setSelected(false);
-        tvSelection.setVisibility(View.GONE);
+        tvSelection.setVisibility(View.INVISIBLE);
 
         llStepContentContainer.setVisibility(View.GONE);
 
